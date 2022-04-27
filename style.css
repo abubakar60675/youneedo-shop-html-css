@@ -1,0 +1,110 @@
+body {
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div {
+    /* border: 1px solid grey;
+    padding: 2px; */
+}
+
+.rating-star {
+    color: rgb(245, 197, 75);
+}
+
+.product-item {
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.footer-items {
+    color: #ccc;
+}
+
+.footer-items ul {
+    list-style: square;
+}
+
+.breadcrumb {
+    background-color: #ccc;
+}
+
+.product-small img {
+    max-width: 10rem;
+    padding: 1rem;
+}
+
+.cart-item {
+    border: solid 1px grey;
+}
+
+.order {
+    border: 1px solid grey;
+}
+
+.close i {
+    font-size: 1.5rem;
+}
+
+.close i:hover {
+    color: rgb(214, 75, 75);
+}
+
+.inp {
+    width: 50px;
+    height: 47px;
+}
+
+.login-box {
+    background-color: #eee;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.success-icon {
+    font-size: 10rem;
+}
+
+#carouselExampleDark img {
+    max-height: 90vh;
+}
+
+.toast {
+    top: -50px;
+}
+
+.toast.show {
+    top: 0px;
+}
+
+a.logo {
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.color-label {
+    border-radius: 50% !important;
+    margin: 5px;
+}
+
+.color-label i {
+    opacity: 0;
+}
+
+.btn-check:checked+.color-label i {
+    opacity: 1;
+}
+
+.text-small {
+    font-size: 0.8rem;
+}
+
+ul li {
+    list-style: none;
+}

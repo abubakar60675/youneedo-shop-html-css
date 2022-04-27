@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Youneedo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success"
+              type="submit"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Search for All Products"
+            >
+              Search
+            </button>
+          </form>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#products">Cameras</a></li>
+                            <li><a class="dropdown-item" href="#products">Apple Gadgets </a></li>
+                            <li><a class="dropdown-item" href="#products">Headphones</a></li>
+                        </ul>
+                    </li> -->
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="/cart.html">
+                <i class="bi bi-cart-plus-fill"></i> Cart
+              </a> -->
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/cart.html">
+                <i class="bi bi-cart-plus-fill"></i> Cart
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                >My Account</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb p-3">
+        <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Camera</a></li>
+        <li class="breadcrumb-item active" aria-current="page">MX-5</li>
+      </ol>
+    </nav>
+
+    <div class="container mb-5">
+      <div class="row d-flex flex-row">
+        <div class="col-md-5 product-image">
+          <img class="img-fluid" src="./images/product-1-square.jpg" alt="" />
+        </div>
+        <div
+          class="col-md-2 product-small d-flex flex-md-column justify-content-center order-md-first"
+        >
+          <img class="img-fluid" src="./images/product-1-square.jpg" alt="" />
+          <img class="img-fluid" src="./images/product-1-square.jpg" alt="" />
+          <img class="img-fluid" src="./images/product-1-square.jpg" alt="" />
+        </div>
+
+        <div class="col-md-5">
+          <h6 class="text-uppercase text-secondary">Sony</h6>
+          <h2 class="fs-3">WMX headphone</h2>
+          <h5 class="text-secondary fs-6 fw-bold">$100</h5>
+          <div class="text-secondary text-small">Color :</div>
+          <div class="my-2">
+            <div
+              class="btn-group"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio1"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn btn-danger color-label" for="btnradio1">
+                <i class="bi bi-check2"></i>
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio2"
+                autocomplete="off"
+              />
+              <label class="btn btn-success color-label" for="btnradio2">
+                <i class="bi bi-check2"></i>
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio3"
+                autocomplete="off"
+              />
+              <label class="btn btn-dark color-label" for="btnradio3">
+                <i class="bi bi-check2"></i>
+              </label>
+            </div>
+          </div>
+
+          <div class="text-secondary text-small">Size :</div>
+          <div class="my-2">
+            <div
+              class="btn-group"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="size"
+                id="btnradio4"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn btn-outline-primary" for="btnradio4">S</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="size"
+                id="btnradio5"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="btnradio5">M</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="size"
+                id="btnradio6"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="btnradio6">L</label>
+            </div>
+          </div>
+
+          <a
+            href="/cart.html"
+            class="btn btn-primary w-100 my-2"
+            onclick="showToast()"
+          >
+            <i class="bi bi-cart-plus-fill"></i> Add To Cart</a
+          >
+          <div>
+            Details
+            <ul>
+              <li>Black Color</li>
+              <li>Metal Covering</li>
+              <li>Made in Japan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer mt-auto bg-dark text-light">
+      <div class="container py-3">
+        <div class="row d-flex footer-items">
+          <div class="col">
+            <h5>Ctategories</h5>
+            <ul>
+              <li>Watches</li>
+              <li>Mobiles</li>
+              <li>Tablets</li>
+              <li>Audio</li>
+              <li>Drones</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Useful Links</h5>
+            <ul>
+              <li>Terms</li>
+              <li>Privacy</li>
+              <li>About Us</li>
+              <li>Mission</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Get updates</h5>
+            <div class="d-flex">
+              <input type="text " class="form-control" />
+              <button class="btn btn-primary">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="toast d-flex align-items-center text-white bg-primary border-0 position-fixed"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div class="toast-body">Item is successfully added to your cart.</div>
+      <button
+        type="button"
+        class="btn-close btn-close-white ms-auto me-2"
+        data-bs-dismiss="toast"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
